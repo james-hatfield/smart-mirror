@@ -17,6 +17,6 @@
 <div id="welcome">{{this.message}}</div>
 <div class="feed">
     <ul>
-        <li *ngFor="let element of feeds" class="slide" ><strong>{{element.title}}:  </strong> {{element.description}}</li>
+        <li *ngFor="let element of feeds" class="slide" ><strong>{{element.title}}:  </strong> {{element.description.slice(0,100)}}</li>
     </ul>
 </div>
